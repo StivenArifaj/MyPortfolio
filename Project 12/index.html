@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text To Speech Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Text To Speech <span>Converter</span></h1>
+        <textarea placeholder="Write anything here..."></textarea>
+        <div class="row">
+            <select id="voices"></select>
+            <button><img src="images/play.png">Listen</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        let speech = new SpeechSynthesisUtterance();
+        let voices = [];
+        let voiceSelect = document.getElementById("voices");
+
+        function populateVoiceList() {
+            voices = speechSynthesis.getVoices();
+            voices.forEach((voice, i) => {
+                let option = document.createElement('option');
+                option.textContent = voice.name;
+                option.setAttribute('data-lang', voice.lang);
+                option.setAttribute('data-name', voice.name);
+                voiceSelect.appendChild(option);
+            });
+        }
+
+        populateVoiceList();
+        
+        setTimeout(populateVoiceList, 100);
+
+        voiceSelect.addEventListener("change", () =>{
+            let selectedOption = voiceSelect.selectedOptions[0].getAttribute('data-name');
+            let selectedVoice = voices.find(voice => voice.name === selectedOption);
+            speech.voice = selectedVoice;
+        });
+
+        document.querySelector("button").addEventListener("click", () =>{
+            speech.text = document.querySelector("textarea").value;
+            window.speechSynthesis.speak(speech);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">MyPortfolio</a>
+
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+
+        <div class="bx bx-moon" id="darkMode-icon">
+
+        </div>
+        <div class="bx bx-menu" id="menu-icon">
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Stiven Arifaj</h1>
+            <p>I am Stiven, a passionate and dedicated programmer committed to continuous learning and growth in the field of programming. With a strong focus on building innovative and impactful solutions, I strive to make a difference through my work.</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <a href="CV - Stiven Arifaj.pdf" class="btn">Download CV</a>
+        </div>
+
+         <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+                <div class="profession"  style="--i:1;">
+                    <i class='bx bx-palette'></i>
+                    <h3>Graphic Designer</h3>
+                </div>
+                <div class="profession"  style="--i:2;">
+                    <i class='bx bxs-cuboid'></i>
+                    <h3>3D Modeler</h3>
+                </div>
+                <div class="profession"  style="--i:3;">
+                    <i class='bx bx-game'></i>                    <h3>Game Developer</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+         </div>
+
+         <div class="home-img">
+            <img src="images/Profile_Picture-removebg.png">
+         </div>
+    </section>
+
+    <!-- about section design -->
+      
+     <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/picture1.jpg" >
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Hi, I'm interested on new project.</h3>
+            <p>"Coding isn't just a skill; it's my passion, driving me to explore, innovate, and create. I find immense joy in using programming languages to develop solutions that tackle real-world challenges and enhance lives. With a keen eye for detail and a relentless pursuit of excellence, I thrive on turning ideas into reality through programming."</p>
+            <a href="AboutMe/aboutme.html" class="btn">Read More</a>
+        </div>
+
+     </section>
+
+
+
+      
+    <!-- services section design -->
+
+     <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>"I have a deep passion for developing websites, where creativity meets functionality, and every line of code brings ideas to life in the digital world."</p>
+                <a href="Web/web.html" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-palette'></i>
+                <h3>Graphic Designer</h3>
+                <p>"I am passionate about graphic design, finding joy in creating visually appealing solutions that effectively communicate and make a lasting impression."</p>
+                <a href="GD/gd.html" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-cuboid'></i>
+                <h3>3D Modeler</h3>
+                <p>"I am deeply passionate about 3D modeling, where my creativity flourishes as I bring digital worlds to life with intricate designs and captivating visuals."</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-game'></i>                    
+                <h3>Game Developer</h3>
+                <p>""I am deeply passionate about game development, where creativity meets technology, allowing me to craft imprssive for players."</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+     </section>
+
+    <!-- portfolio section design -->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Projects</span></h2>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="images/portfolio1.png" alt="">
+
+
+                    <div class="portfolio-layer">
+                        <h4>Calculator Web Application</h4>
+                        <p>A responsive and interactive calculator that performs basic arithmetic operations with a user-friendly interface..</p>
+                        <a href="Project 1/index1.html"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/portfolio2.png" alt="">
+
+                    <div class="portfolio-layer">
+                        <h4>Tic Tac Toe Game</h4>
+                        <p>An interactive two-player Tic Tac Toe game with a dynamic game board, win detection, and a restart feature for endless fun.</p>
+                        <a href="Project 3/index.html"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/portfolio3.png" alt="">
+
+                    <div class="portfolio-layer">
+                        <h4>Weather Today App</h4>
+                        <p>A weather application that provides real-time weather updates for any city, including temperature, humidity, wind speed, and condition-specific icons.</p>
+                        <a href="Project 7/index.html"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/portfolio4.png" alt="">
+
+                    <div class="portfolio-layer">
+                        <h4>50 Question Tech Quiz</h4>
+                        <p>An engaging tech quiz with 50 questions, featuring multiple-choice answers, a dynamic question display, and a next-button navigation system.</p>
+                        <a href="Project 8/index.html"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/portfolio5.png" alt="">
+
+                    <div class="portfolio-layer">
+                        <h4>QR Code Generator</h4>
+                        <p>A simple and intuitive tool that converts text or URLs into QR codes, allowing users to generate and view their custom QR codes instantly.</p>
+                        <a href="Project 10/index.html"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/portfolio6.png" alt="">
+
+                    <div class="portfolio-layer">
+                        <h4>Responsive Website with Login and Registration</h4>
+                        <p>A modern and responsive website template featuring a navigation bar, login, and registration forms.
+                        </p>
+                        <a href="Project 11/index.html"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/portfolio7.png" alt="">
+
+                    <div class="portfolio-layer">
+                        <h4>Text to Speech Converter</h4>
+                        <p>An interactive tool that transforms written text into spoken words, featuring customizable voice options for a personalized user experience.</p>
+                        <a href="Project 12/index.html"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/portfolio8.png" alt="">
+
+                    <div class="portfolio-layer">
+                        <h4>Image Search Engine</h4>
+                        <p>A functional image search engine that retrieves and displays images based on user input, with an option to load more results for seamless exploration.</p>
+                        <a href="Project 13/index.html"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/portfolio12.png" alt="">
+
+                    <div class="portfolio-layer">
+                        <h4>HackZurich Website</h4>
+                        <p>A professional website for HackZurich, featuring a navigation bar with sections for Home, About, Services, and Contact, along with a login and registration popup. The website allows users to switch between different sections and access login functionalities.</p>
+                        <a href="Project 17/index.html"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/portfolio10.png" alt="">
+
+                    <div class="portfolio-layer">
+                        <h4>3D Modeling</h4>
+                        <p>A computer worked by me on Skech UP. This computer has all the components an the elements.</p>
+                        <a href="3D.png"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/portfolio11.png" alt="">
+
+                    <div class="portfolio-layer">
+                        <h4>Game Development</h4>
+                        <p>An Milti-Coultural map for a game that represents the old CASTLE OF KRUJA</p>
+                        <a href="GD Project3.jpg"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="images/portfolio9.png" alt="">
+
+                    <div class="portfolio-layer">
+                        <h4>Graphic Designe</h4>
+                        <p>A whole package that contains the logo the pattern the mockups and the slogan for an company called WORLD AI</p>
+                        <a href="GD Project 2.png"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+    <!-- testimonial design -->
+
+   
+    <div class="testemonial-container">
+        <h2 class="heading">Valuable <span>Testimonial</span></h2>
+    
+        <div class="testemonial-wrapper">
+            <div class="testemonial-box mySwiper">
+                <div class="testemonial-content swiper-wrapper">
+                    <!-- Testimonial Slide 1 -->
+                    <div class="testemonial-slide swiper-slide">
+                        <img src="images/testimonial1.jpg" alt="">
+                        <h3>Jackson Levi</h3>
+                        <p>"Working with Stiven was an absolute pleasure. His ability to understand complex requirements and translate them into stunning visuals and functional designs is exceptional. He approached every aspect of the project with a high level of professionalism, ensuring we stayed on track while maintaining a creative edge. Stiven’s communication was clear and timely, making the entire process smooth and enjoyable. I highly recommend him for any project!"</p>
+                    </div>
+                    <!-- Testimonial Slide 2 -->
+                    <div class="testemonial-slide swiper-slide">
+                        <img src="images/testimonial2.jpg" alt="">
+                        <h3>Sophia Williams</h3>
+                        <p>"Stiven is a highly talented developer who brings a unique blend of creativity and technical expertise to his work. He consistently delivers high-quality results while ensuring that all my requirements are met. His attention to detail and dedication to perfecting every element of the project were impressive. I truly appreciate his ability to make complex features work seamlessly and efficiently. I look forward to working with him again in the future."</p>
+                    </div>
+                    <!-- Testimonial Slide 3 -->
+                    <div class="testemonial-slide swiper-slide">
+                        <img src="images/testimonial3.jpg" alt="">
+                        <h3>Mark Johnson</h3>
+                        <p>"I’ve had the privilege of working with Stiven on multiple projects, and he continues to impress with his creativity, problem-solving skills, and ability to deliver on time. His technical knowledge is extensive, and he brings a fresh perspective to every challenge. Whether it's design, coding, or troubleshooting, Stiven approaches it all with a positive attitude and meticulous attention to detail. He is undoubtedly one of the most reliable and skilled professionals I have worked with."</p>
+                    </div>
+                </div>
+    
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form id="contact-form" action="https://formspree.io/f/mbldvbvg" method="POST">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="tel" name="phone" placeholder="Mobile Number">
+                <input type="text" name="subject" placeholder="Email Subject">
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+            <p id="form-message" style="display:none; color: green;">Message sent successfully!</p>
+        </form>
+    </section>
+    
+    <!-- footer design -->
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2024 by Stiven Arifaj | All Rights Reserved.</p>
+    </div>
+
+
+    <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
